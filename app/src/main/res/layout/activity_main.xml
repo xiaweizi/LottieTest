@@ -8,20 +8,24 @@
     tools:context="com.xiaweizi.lottietest.MainActivity">
 
     <com.airbnb.lottie.LottieAnimationView
-        android:id="@+id/refreshing_icon"
-        android:layout_width="70dp"
-        android:layout_height="70dp"
-        android:background="#3dd64949"
-        app:lottie_autoPlay="false"
-        app:lottie_fileName="data.json"
-        app:lottie_loop="true" />
+        android:id="@+id/refresh_pull"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
 
-    <com.airbnb.lottie.LottieAnimationView
-        android:id="@+id/heart"
-        android:layout_width="70dp"
-        android:layout_height="70dp"
-        app:lottie_autoPlay="false"
-        app:lottie_fileName="heart.json"
-        app:lottie_loop="false" />
+    <SeekBar
+        android:id="@+id/seekBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/reset"
+        android:text="reset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <Button
+        android:id="@+id/loading"
+        android:text="loading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
 
 </LinearLayout>
